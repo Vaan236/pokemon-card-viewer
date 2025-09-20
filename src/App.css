@@ -1,0 +1,297 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.light-mode{
+  background-color: white;
+  color: #333;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+.night-mode {
+  padding: 8px 16px;
+  background-color: #2a75bb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.back-button {
+  padding: 8px 16px;
+  background-color: #2a75bb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.dark-mode .pokemon-card {
+  background-color: #2d2d2d;
+  border-color: #444;
+}
+
+.dark-mode .search-input {
+  background-color: #2d2d2d;
+  color: #fff;
+  border-color: #444;
+}
+
+.dark-mode .night-mode {
+  background-color: #444;
+}
+
+.dark-mode .back-button {
+  background-color: #444;  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.title {
+  transition: transform 0.2s ease;
+}
+
+.title:hover {
+  transform: scale(1.05);
+  color: #2a75bb;
+}
+
+/* sorting */
+.sort-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.sort-select {
+  padding: 8px;
+  border: 2px solid #2a75bb;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+}
+
+.sort-container button {
+  padding: 8px 16px;
+  border: 2px solid #2a75bb;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+}
+
+.dark-mode .sort-select,
+.dark-mode .sort-container button {
+  background: #2d2d2d;
+  color: white;
+  border-color: #444;
+}
+
+/* container */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.container > p {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* search input */
+.search-container{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-input {
+  padding: 8px;
+  border: 2px solid skyblue;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.search-button{
+  padding: 8px 16px;
+  background-color: #2a75bb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #1e5c94;
+}
+
+.dark-mode .search-button {
+  background-color: #444;  
+}
+
+.sets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  gap: 20px;
+  padding: 20px;
+}
+
+.set-card { 
+  border: 2px solid navy;
+  border-radius: 10px;
+  padding: 15px;
+  background: white;
+  box-shadow: 0 2px 5px black;
+  transition: transform 0.3s ease;
+  text-align: center;
+  width: 250px;  /* Set fixed width */
+  height: 350px; /* Set fixed height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.set-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px black;
+}
+
+.set-card img {
+  width: 200px;     /* Fixed width for images */
+  height: 200px;    /* Fixed height for images */
+  object-fit: contain;  /* Maintains aspect ratio without stretching */
+  margin-bottom: 15px;
+}
+
+.set-card h3 {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.dark-mode .set-card{
+  background: #2d2d2d;
+  color: white;
+}
+
+.card-grid {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.pokemon-card {
+  border: 2px navy;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  background-color: white;
+  box-shadow: 0 2px 5px black;
+  transition: transform 0.3s ease;
+}
+
+.pokemon-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px black;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: Gray;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+  border: red;
+}
+
+.pagination-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.page-counter {
+  font-weight: bold;
+}
+
+.pagination-btn {
+  padding: 8px 16px;
+  background-color: #2a75bb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dark-mode .pagination-btn{
+  background-color: #444;  
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -8,7 +8,6 @@ function App() {
   const [favorites, setFavorites] = useState([]); //favorite cards
   const [hasSearched, setHasSearched] = useState(false);
   const [nightMode, setNightMode] = useState(false); //night mode
-  const [greeting, setGreeting] = useState(''); //date/time greet
   const [sets, setSets] = useState([]); //set packs
   const [setsLoading, setSetsLoading] = useState(true); //loading for set packs
   const [sortBy, setSortBy] = useState('name'); //for sorting option

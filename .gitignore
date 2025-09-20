@@ -25,3 +25,7 @@ yarn-error.log*
 # Tutor files
 Tutor/
 TUTOR_PROMPT.md
+
+# Environment variables
+.env
+.env.local

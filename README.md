@@ -42,4 +42,4 @@ This project represents my journey into React development as a beginner programm
 - API integration with error handling
 - Request cancellation for better UX
 
-**Note:** Will add more features in the future
+You can visit the website here: https://pokemon-card-viewer.netlify.app
